@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Favorites App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Techniques</div>
+        <nav>
+            <button id="homeBtn" class="nav-btn active">Home</button>
+            <button id="favBtn" class="nav-btn">
+                Favorites (<span id="favCount">0</span>)
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <section id="homePage" class="page active">
+            <div id="productList" class="product-grid"></div>
+        </section>
+
+        <!-- Favorites Page -->
+        <section id="favoritesPage" class="page">
+            <button id="backBtn" class="back-btn">← Back</button>
+            <div id="favoritesList" class="product-grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
